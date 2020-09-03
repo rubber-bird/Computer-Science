@@ -10,7 +10,14 @@ class SinglyLinkedList:
 		self.head = None
 		self._length = 0
 
-	def insert(self,val):
+	def __len__(self):
+		print("length of llist :", self._length)
+		return self._length
+
+	def is_empty(self):
+		return self._length == 0
+
+	def insert(self, val):
 		new_node = Node(val)
 
 		if self.head is None:
@@ -24,18 +31,34 @@ class SinglyLinkedList:
 
 		last.next = new_node
 
-	def __len__(self):
-		print("length of llist :", self._length)
-		return self._length
+	def delete(self, val):
+        current = self.head
+        previous = None
+        found = False
+        while current and found is False:
+        	if current.value == val
+        		found = True
+        	else:
+        		previous = current
+        		current = current.next
+        if current is None:
+        	raise ValueError
+        if previous is None:
+        	self.head = current.next
+        else:
+        	previous.next = current.next
 
-	def is_empty(self):
-		return self._length == 0
-
-	def search():
-		pass
-
-	def delete():
-		pass
+	def search(self, val):
+		current = self.head
+		found = False
+		while current and found is False:
+			if current.value == val:
+			    found = True
+			else:
+				current = current.next
+		if current is None:
+			raise ValueError
+		return current
 
 	def printList(self):
 		current = self.head
