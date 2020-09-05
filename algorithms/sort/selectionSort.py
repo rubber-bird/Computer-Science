@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 
-def selectionSort(arr):
-	for i in range(len(arr)):
+def selectionSort(array):
+	for i in range(len(array)):
 		min_idx = i
-		for j in range(i+1, len(arr)):
-			if arr[min_idx] > arr[j]:
+		for j in range(i+1, len(array)):
+			if array[min_idx] > array[j]:
 				min_idx = j
-		arr[i], arr[min_idx] = arr[min_idx], arr[i]
+		array[i], array[min_idx] = array[min_idx], array[i]
+	return array
