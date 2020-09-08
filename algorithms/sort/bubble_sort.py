@@ -1,5 +1,4 @@
-
-#! /usr/bin/python3
+#!/usr/bin/python3
 
 def bubbleSort(array):
   for i in range(len(array) - 1):

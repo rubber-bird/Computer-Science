@@ -1,4 +1,4 @@
-#! /usr/bin/python3
+#!/usr/bin/python3
 
 def insertionSort(array): 
     for i in range(1, len(array)): 

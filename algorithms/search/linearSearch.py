@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 
 def search(arr, n, x):
 	for i in range(0, n):
