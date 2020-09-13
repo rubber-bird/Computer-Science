@@ -24,7 +24,6 @@ class SinglyLinkedList:
 			self.head = new_node
 			return
 
-	
 		last = self.head
 		while (last.next):
 			last = last.next
@@ -32,15 +31,15 @@ class SinglyLinkedList:
 		last.next = new_node
 
 	def delete(self, val):
-        current = self.head
-        previous = None
-        found = False
-        while current and found is False:
-        	if current.value == val
-        		found = True
-        	else:
-        		previous = current
-        		current = current.next
+		current = self.head
+		previous = None
+		found = False
+		while current and found is False:
+			if current.value == val:
+				found = True
+			else:
+				previous = current
+				current = current.next
         if current is None:
         	raise ValueError
         if previous is None:
@@ -66,10 +65,9 @@ class SinglyLinkedList:
 			print(current.value)
 			current = current.next
 
-
-def ggg():
+def main():
 	#Some tests
-	llist = SinglyLinkedList()
+	llist = SinglyLinkedList
 	llist.insert(1)
 	llist.insert(2)
 	llist.insert(3)
@@ -81,4 +79,4 @@ def ggg():
 	llist.printList()
 
 if __name__ == '__main__':
-	ggg()
+	main()
