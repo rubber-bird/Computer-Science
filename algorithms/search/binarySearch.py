@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+# BigO: logn
+# Space: n
 def binarySearch(arr, l, r, x):
   if r >= l:
     mid = l + (r-1)
